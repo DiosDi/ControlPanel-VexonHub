@@ -1,1 +1,7 @@
-print("hi")
+local CoreGui = game:GetService("StarterGui")
+    CoreGui:SetCore("SendNotification", {
+        Title = "Announced",
+        Text = "Join Dc Server For Cookie😋",
+        Duration = 7,
+        Callback = AllowRunServiceBind,
+    })
