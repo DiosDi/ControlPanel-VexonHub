@@ -1,1 +1,9 @@
-print("hi")
+local TeleportService = game:GetService("TeleportService")
+local placeId = 136916690652797
+local currentPlaceId = game.PlaceId
+
+if currentPlaceId ~= placeId then
+    TeleportService:Teleport(placeId)
+else
+    print("its playing game")
+end
