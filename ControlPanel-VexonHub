@@ -1,1 +1,4 @@
-print("hi")
+local TeleportService = game:GetService("TeleportService")
+local placeId = 112996464367232 
+
+TeleportService:Teleport(placeId)
