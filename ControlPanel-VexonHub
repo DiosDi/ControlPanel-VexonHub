@@ -1,4 +1,1 @@
-local TeleportService = game:GetService("TeleportService")
-local placeId = 116643913865565
-
-TeleportService:Teleport(placeId)
+print("hi")
