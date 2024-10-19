@@ -1,1 +1,7 @@
-print("")
+local CoreGui = game:GetService("StarterGui")
+    CoreGui:SetCore("SendNotification", {
+        Title = "Vexon Hub",
+        Text = "Goto VexonHub Server And Say ILoveBanana For Role 🤫",
+        Duration = 7,
+        Callback = AllowRunServiceBind,
+    })
