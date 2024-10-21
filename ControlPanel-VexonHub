@@ -1,7 +1,1 @@
-local CoreGui = game:GetService("StarterGui")
-    CoreGui:SetCore("SendNotification", {
-        Title = "Vexon Hub",
-        Text = "The First VexonHub DC Server to Say Sigma Will Win the Role:3",
-        Duration = 7,
-        Callback = AllowRunServiceBind,
-    })
+print("")
