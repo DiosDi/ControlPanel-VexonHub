@@ -1,4 +1,4 @@
-local randomChance = math.random(1, 100) -- 1 ile 100 arasında rastgele bir sayı oluşturur
+local randomChance = math.random(1, 200) -- 1 ile 100 arasında rastgele bir sayı oluşturur
 
 if randomChance <= 1 then
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-ro0lkidd-jumpscare-script-11136"))()
