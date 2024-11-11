@@ -1,7 +1,1 @@
-local CoreGui = game:GetService("StarterGui")
-    CoreGui:SetCore("SendNotification", {
-        Title = "VexonHub",
-        Text = "The first person to write negro in the discord chat will win the role",
-        Duration = 10,
-        Callback = AllowRunServiceBind,
-    })
+print("Join Dc Server")
