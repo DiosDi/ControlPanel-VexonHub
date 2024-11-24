@@ -1,7 +1,9 @@
-local CoreGui = game:GetService("StarterGui")
+--[[local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "VexonHub",
     Text = "Join DC Server For Early Access GiveAways",
     Duration = 3,
     Callback = AllowRunServiceBind,
-})
+})]]
+
+print("Join Dc Server")
