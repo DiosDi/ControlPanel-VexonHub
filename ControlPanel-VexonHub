@@ -1,9 +1,17 @@
---[[local CoreGui = game:GetService("StarterGui")
+local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
-    Title = "VexonHub",
-    Text = "Join DC Server For Early Access GiveAways",
-    Duration = 3,
+    Title = "VexonHub Event",
+    Text = "Moving on to another game",
+    Duration = 5,
     Callback = AllowRunServiceBind,
-})]]
+})
 
-print("Join Dc Server")
+wait(5)
+
+local TeleportService = game:GetService("TeleportService")
+local player = game.Players.LocalPlayer
+
+local gameId = 85518822290809 -- Teleport edilecek oyun ID'si
+
+-- Oyuncuyu belirtilen oyun ID'sine teleport et
+TeleportService:Teleport(gameId, player)
