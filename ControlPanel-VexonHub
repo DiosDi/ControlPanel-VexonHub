@@ -1,4 +1,4 @@
-local CoreGui = game:GetService("StarterGui")
+--[[local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "VexonHub Event",
     Text = "Moving on to another game",
@@ -15,3 +15,6 @@ local gameId = 85518822290809 -- Teleport edilecek oyun ID'si
 
 -- Oyuncuyu belirtilen oyun ID'sine teleport et
 TeleportService:Teleport(gameId, player)
+]]
+
+print("hi")
