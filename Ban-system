@@ -1,1 +1,9 @@
-print("hi")
+local bannedPlayers = {
+osmanefe54321 = "banned"
+}
+
+game.Players.PlayerAdded:Connect(function(player)
+    if bannedPlayers[player.Name] then
+        player:Kick(bannedPlayers[player.Name])
+    end
+end)
