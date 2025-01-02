@@ -1,5 +1,5 @@
 local bannedPlayers = {
-osmanefe54321 = "banned"
+thevex0n_nyaa = "banned"
 }
 
 game.Players.PlayerAdded:Connect(function(player)
