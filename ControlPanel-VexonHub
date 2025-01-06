@@ -20,7 +20,7 @@ TeleportService:Teleport(gameId, player)
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "VexonHub Event",
-    Text = "Say (im sigma boy) for free role in discord chat",
+    Text = "Say sigma in dc for free role",
     Duration = 5,
     Callback = AllowRunServiceBind,
 })
