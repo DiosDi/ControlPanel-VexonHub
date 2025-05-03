@@ -1,9 +1,0 @@
-local bannedPlayers = {
-thevex0n_nyaa = "banned"
-}
-
-game.Players.PlayerAdded:Connect(function(player)
-    if bannedPlayers[player.Name] then
-        player:Kick(bannedPlayers[player.Name])
-    end
-end)
